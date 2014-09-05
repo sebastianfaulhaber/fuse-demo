@@ -171,7 +171,7 @@
 
 
     <build>
-        <finalName>jboss-fuse-full</finalName>
+        <finalName>cbr-demo</finalName>
         <resources>
           <resource>
             <directory>src/main/resources</directory>

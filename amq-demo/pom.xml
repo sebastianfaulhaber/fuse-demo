@@ -171,7 +171,7 @@
 
 
     <build>
-        <finalName>jboss-fuse-full</finalName>
+        <finalName>amq-demo</finalName>
         <resources>
           <resource>
             <directory>src/main/resources</directory>
