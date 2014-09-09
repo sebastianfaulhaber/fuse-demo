@@ -8,11 +8,17 @@
        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
        http://camel.apache.org/schema/spring http://camel.apache.org/schema/spring/camel-spring.xsd">
 
+  <bean id="myPersonProcessor" class="com.redhat.demo.MyPersonProcessor"/>
+
   <camelContext id="demo-amq-context" xmlns="http://camel.apache.org/schema/spring">
     <route customId="true" id="amq-routing">
         <from uri="amq:inputQueue"/>
-        <log message="Message read: ${body}"/>
-        <to uri="amq:outputQueue"/>
+        <split>
+            <xpath>/persons/person</xpath>
+            <log message="Processing Message: ${body}"/>
+            <process ref="myPersonProcessor"/>
+            <to uri="amq:outputQueue"/>
+        </split>
     </route>
 </camelContext>
 
