@@ -20,7 +20,7 @@
     <!-- the version of the JBoss Fuse BOM, defining all the dependency versions -->
     <jboss.fuse.bom.version>6.1.0.redhat-379</jboss.fuse.bom.version>
     <fabric.version>1.0.0.redhat-379</fabric.version>
-    <camel-version-range>[2.12,3)</camel-version-range>
+    <camel-version-range>[2.17.6,)</camel-version-range>
 
     <!-- fabric8 deploy profile configuration -->
     <fabric8.profile>demo-simpleroute</fabric8.profile>
@@ -117,12 +117,12 @@
     <dependency>
       <groupId>org.apache.camel</groupId>
       <artifactId>camel-core</artifactId>
-      <version>2.12.0.redhat-610379</version>
+      <version>[2.17.6,)</version>
     </dependency>
     <dependency>
       <groupId>org.apache.camel</groupId>
       <artifactId>camel-spring</artifactId>
-      <version>2.12.0.redhat-610379</version>
+      <version>[2.17.6,)</version>
     </dependency>
 
     <!-- logging -->
@@ -146,7 +146,7 @@
     <dependency>
       <groupId>org.apache.camel</groupId>
       <artifactId>camel-test-spring</artifactId>
-      <version>2.12.0.redhat-610379</version>
+      <version>[2.17.6,)</version>
       <scope>test</scope>
     </dependency>
 
@@ -222,7 +222,7 @@
 		    <plugin>
 		        <groupId>org.apache.camel</groupId>
 		        <artifactId>camel-maven-plugin</artifactId>
-		        <version>2.12.0.redhat-610379</version>
+		        <version>[2.17.6,)</version>
 		    </plugin>
                 
         </plugins>
@@ -255,7 +255,7 @@
 <!--       <plugin> -->
 <!--         <groupId>org.apache.camel</groupId> -->
 <!--         <artifactId>camel-maven-plugin</artifactId> -->
-<!--         <version>2.12.0.redhat-610379</version> -->
+<!--         <version>[2.17.6,)</version> -->
 <!--       </plugin> -->
 <!--     </plugins> -->
 <!--   </build> -->
